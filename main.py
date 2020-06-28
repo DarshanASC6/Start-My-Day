@@ -1,29 +1,40 @@
 import subprocess
-import datetime
+import time
 import playsound
+# import webbrowser
+import json
 
 
+t = 1200
 
-# Helpful
-# https://www.youtube.com/watch?v=1iz4iwjUWTQ
-# https://www.programiz.com/python-programming/datetime/current-time
+# Import JSON compatability into the file
+with open('data.json') as f:
+    data = json.load(f)
 
-Atom = 'C:\\Users\\ASCStudent\\AppData\\Local\\atom\\atom.exe'
-Firefox = '"C:\\Program Files\\Mozilla Firefox\\firefox.exe"'
 
-time = 1200
-
-def timer(time):
+def timer(t):
     while t:
         mins, secs = divmod(t, 60)
         timer = '{:02d}:{:02d}'.format(mins, secs)
         print(timer, end="\r")
         time.sleep(1)
         t -= 1
+    for i in range(0, 5):
         playsound.playsound('chime.mp3')
 
 
 def open(filepath):
     subprocess.call(filepath)
 
-open(Atom)
+
+# for filepaths in data['open']:
+#     print(filepaths)
+
+# open(Atom)
+# Opens my IDE
+# for i in range(0,3):
+#     open(Firefox)
+#     webbrowser.open()
+#     # Opens 3 Firefox browsers
+# for i in range(0,3):
+#     timer(t)

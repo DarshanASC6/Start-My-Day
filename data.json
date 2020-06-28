@@ -1,0 +1,18 @@
+{
+  "open": [
+    {
+      "filepaths": [{
+        "Atom": "C:\\Users\\ASCStudent\\AppData\\Local\\atom\\atom.exe",
+        "Firefox": "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
+      }],
+      "personal":[{
+        "YouTube": "https://www.youtube.com/",
+        "Free Games": "http://www.indiegamebundles.com/category/free/",
+        "Wait But Why": "https://waitbutwhy.com/"
+      }],
+      "school":[{
+        "Dashboard": "https://gavirtual.instructure.com/",
+        "Modules List": "https://gavirtual.instructure.com/courses/881/modules"
+      }]
+  }]
+}
