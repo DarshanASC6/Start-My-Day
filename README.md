@@ -1,6 +1,8 @@
 # Start-My-Day
 
-### To-Do:
-- Add some sort of command line like my conversation bot
-- Implement the timer or scrap it entirely
-- Add mail to the program
+
+## This is a program meant to open everything that I need in a given day: a browser,  
+
+
+## Resources
+- https://www.youtube.com/watch?v=1iz4iwjUWTQ
