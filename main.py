@@ -12,13 +12,14 @@ def open(filepath):
 
 
 def web(link):
-    webbrowser.open_new(link)
+    webbrowser.open(link)
+
+
+for i in data['open']['sites']:
+    web(i['link'])
+    # Opens up a Firefox browser window with a bunch of preset tabs
 
 
 for filepaths in data['open']['filepaths']:
     open(filepaths['path'])
     # Opens up my IDE
-
-for i in data['open']['sites']:
-    web(i['link'])
-    # Opens up a Firefox browser window with a bunch of preset tabs
