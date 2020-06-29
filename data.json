@@ -1,20 +1,18 @@
-{"open": {
+{
+  "open": {
     "filepaths": [
-        {
+      {
         "name": "Atom",
         "path": "C:\\Users\\ASCStudent\\AppData\\Local\\atom\\atom.exe"
-        },
-        {
-        "name": "Firefox",
-        "path": "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
-        }
-    ]},
+      }
+    ],
 
-    "sites": [{
-        "link": "https://www.youtube.com/",
-        "link": "http://www.indiegamebundles.com/category/free/",
-        "link": "https://waitbutwhy.com/",
-        "link": "https://gavirtual.instructure.com/",
-        "link": "https://gavirtual.instructure.com/courses/881/modules"
-    }]
+    "sites": [
+      {"link": "https://www.youtube.com"},
+      {"link": "http://www.indiegamebundles.com/category/free"},
+      {"link": "https://waitbutwhy.com"},
+      {"link": "https://gavirtual.instructure.com"},
+      {"link": "https://gavirtual.instructure.com/courses/881/modules"}
+    ]
+  }
 }

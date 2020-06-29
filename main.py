@@ -28,14 +28,18 @@ def open(filepath):
     subprocess.call(filepath)
 
 
+def web(link):
+    webbrowser.open_new(link)
+
+
 for filepaths in data['open']['filepaths']:
     open(filepaths['path'])
-# Opens up my IDE and a Firefox browser window
+    # Opens up my IDE
 
-# for i in data['open']['sites']:
-#     print(i['link'])
-# # Should print all of the links I have in my JSON file
+for i in data['open']['sites']:
+    web(i['link'])
+    # Opens up a Firefox browser window with a bunch of preset tabs
 
-# webbrowser.open('http://www.python.org')
+
 # for i in range(0, 3):
 #     timer(t)
