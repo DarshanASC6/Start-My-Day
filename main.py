@@ -1,11 +1,12 @@
 import subprocess
 import time
 import playsound
-# import webbrowser
+import webbrowser
 import json
 
 
 t = 1200
+# 20 minutes but written in seconds
 
 # Import JSON compatability into the file
 with open('data.json') as f:
@@ -27,14 +28,14 @@ def open(filepath):
     subprocess.call(filepath)
 
 
-# for filepaths in data['open']:
-#     print(filepaths)
+for filepaths in data['open']['filepaths']:
+    open(filepaths['path'])
+# Opens up my IDE and a Firefox browser window
 
-# open(Atom)
-# Opens my IDE
-# for i in range(0,3):
-#     open(Firefox)
-#     webbrowser.open()
-#     # Opens 3 Firefox browsers
-# for i in range(0,3):
+# for i in data['open']['sites']:
+#     print(i['link'])
+# # Should print all of the links I have in my JSON file
+
+# webbrowser.open('http://www.python.org')
+# for i in range(0, 3):
 #     timer(t)
